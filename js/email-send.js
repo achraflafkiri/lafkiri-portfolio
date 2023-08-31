@@ -1,4 +1,4 @@
-emailjs.init('VPHXCprBTqU0ynXqP'); // Replace 'user_yourUserId' with your actual user ID
+emailjs.init('user_yourUserId'); // Replace 'user_yourUserId' with your actual user ID
 
 document.getElementById("form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -13,8 +13,8 @@ document.getElementById("form").addEventListener("submit", function (event) {
     if (validateForm()) {
         btn.innerHTML = "Sending...";
 
-        const serviceID = "service_b3itza8"; // Replace 'your_service_id' with your actual service ID
-        const templateID = "template_14kb8at"; // Replace 'your_template_id' with your actual template ID
+        const serviceID = "your_service_id"; // Replace 'your_service_id' with your actual service ID
+        const templateID = "your_template_id"; // Replace 'your_template_id' with your actual template ID
 
         emailjs.sendForm(serviceID, templateID, this).then(
             function () {
